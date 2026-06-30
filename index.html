@@ -68,12 +68,18 @@
                     <div class="flex-shrink-0">
                         <a href="#" class="font-heading text-brand-gold text-xl tracking-wide font-bold drop-shadow-md hover:scale-105 transition-transform">AD2630GZ</a>
                     </div>
+                    <div class="flex items-center gap-5">
                     <nav class="hidden md:flex space-x-8">
                         <a href="#tentang" class="text-white hover:text-brand-gold transition duration-300 font-medium">Tentang Kami</a>
                         <a href="#menu" class="text-white hover:text-brand-gold transition duration-300 font-medium">Menu</a>
                         <a href="#ulasan" class="text-white hover:text-brand-gold transition duration-300 font-medium">Ulasan</a>
                         <a href="#lokasi" class="text-white hover:text-brand-gold transition duration-300 font-medium">Lokasi</a>
                     </nav>
+                    <button type="button" class="cart-toggle relative bg-brand-gold hover:bg-yellow-500 text-brand-dark rounded-full w-11 h-11 flex items-center justify-center text-lg shadow-lg transition-all duration-300 hover:scale-105" aria-label="Buka keranjang pesanan" aria-controls="cart-drawer" aria-expanded="false">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="nav-cart-badge" class="hidden absolute -top-2 -right-2 bg-white text-brand-brown text-xs font-black min-w-[24px] h-6 px-1 rounded-full items-center justify-center border-2 border-brand-brown">0</span>
+                    </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -89,7 +95,7 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://wa.me/6282244839538?text=Halo%20Angkringan%20Solo%20AD2630GZ,%20saya%20mau%20pesan..." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-[0_0_15px_rgba(37,211,102,0.5)] hover:shadow-[0_0_25px_rgba(37,211,102,0.8)] transform hover:-translate-y-1 flex items-center justify-center">
+                    <a id="hero-whatsapp" href="https://wa.me/6282244839538?text=Halo%20Angkringan%20Solo%20AD2630GZ,%20saya%20mau%20pesan..." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-[0_0_15px_rgba(37,211,102,0.5)] hover:shadow-[0_0_25px_rgba(37,211,102,0.8)] transform hover:-translate-y-1 flex items-center justify-center">
                         Pesan via WA <i class="fa-brands fa-whatsapp text-2xl ml-2"></i>
                     </a>
                     
@@ -136,51 +142,17 @@
 
         <section id="menu" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-12">
+                    <span class="inline-flex items-center gap-2 rounded-full bg-brand-gold/15 px-4 py-2 text-sm font-bold text-brand-brown border border-brand-gold/30 mb-4">
+                        <i class="fa-solid fa-utensils text-brand-gold"></i>
+                        Pilih menu favoritmu
+                    </span>
                     <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-brown mb-4">Menu Andalan Menggugah Selera</h2>
+                    <p class="text-brand-dark/70 max-w-2xl mx-auto mb-6">Tambah menu ke keranjang, cek totalnya, lalu kirim pesanan langsung ke WhatsApp kami.</p>
                     <div class="w-24 h-1 bg-brand-gold mx-auto rounded-full"></div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=600&q=80" alt="Nasi Kucing" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-5 opacity-90 group-hover:opacity-100 transition-opacity">
-                            <span class="text-brand-gold text-sm font-semibold mb-1">Mulai Rp 3.000</span>
-                            <span class="text-white font-bold text-xl drop-shadow-md">Nasi Kucing</span>
-                        </div>
-                    </div>
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Sate-satean" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-5 opacity-90 group-hover:opacity-100 transition-opacity">
-                            <span class="text-brand-gold text-sm font-semibold mb-1">Beragam Pilihan</span>
-                            <span class="text-white font-bold text-xl drop-shadow-md">Sate Telor Puyuh</span>
-                        </div>
-                    </div>
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80" alt="Soto Daging" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-5 opacity-90 group-hover:opacity-100 transition-opacity">
-                            <span class="text-brand-gold text-sm font-semibold mb-1">Kuah Segar</span>
-                            <span class="text-white font-bold text-xl drop-shadow-md">Soto Daging</span>
-                        </div>
-                    </div>
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1604908177525-47eb021e73be?auto=format&fit=crop&w=600&q=80" alt="Aneka Gorengan" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-5 opacity-90 group-hover:opacity-100 transition-opacity">
-                            <span class="text-brand-gold text-sm font-semibold mb-1">Renyah & Hangat</span>
-                            <span class="text-white font-bold text-xl drop-shadow-md">Aneka Gorengan</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-12 text-center bg-brand-light p-8 rounded-2xl border border-brand-brown/10 shadow-inner">
-                    <h3 class="text-xl font-bold mb-5 text-brand-brown">Menu Spesial Lainnya:</h3>
-                    <div class="flex flex-wrap justify-center gap-3 text-brand-dark/90 font-medium">
-                        <span class="bg-white hover:bg-brand-gold hover:text-white transition-colors cursor-default px-5 py-2.5 rounded-full shadow-sm border border-gray-200">Nasi Liwet</span>
-                        <span class="bg-white hover:bg-brand-gold hover:text-white transition-colors cursor-default px-5 py-2.5 rounded-full shadow-sm border border-gray-200">Pecel Madiun</span>
-                        <span class="bg-white hover:bg-brand-gold hover:text-white transition-colors cursor-default px-5 py-2.5 rounded-full shadow-sm border border-gray-200">Nasi Gudeg</span>
-                        <span class="bg-white hover:bg-brand-gold hover:text-white transition-colors cursor-default px-5 py-2.5 rounded-full shadow-sm border border-gray-200">Susu Jahe</span>
-                    </div>
-                </div>
+                <div id="menu-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6"></div>
             </div>
         </section>
 
@@ -272,19 +244,306 @@
                 </div>
             </div>
         </section>
-        <a href="https://wa.me/6282244839538?text=Halo%20Angkringan%20Solo%20AD2630GZ,%20saya%20mau%20pesan..." 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl shadow-2xl z-50 transform transition duration-300 hover:scale-110"
-       aria-label="Hubungi kami via WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+        <button type="button" id="floating-cart" class="cart-toggle fixed bottom-6 right-6 bg-brand-gold hover:bg-yellow-500 text-brand-dark rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow-2xl z-50 transform transition duration-300 hover:scale-110" aria-label="Buka keranjang pesanan" aria-controls="cart-drawer" aria-expanded="false">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-badge" class="hidden absolute -top-2 -right-2 bg-brand-gold text-brand-dark text-xs font-black w-7 h-7 rounded-full items-center justify-center border-2 border-white">0</span>
+    </button>
+
+        <div id="cart-overlay" class="fixed inset-0 bg-brand-dark/70 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+        <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-[70] shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" aria-hidden="true">
+            <div class="bg-brand-brown text-white px-6 py-5 flex items-center justify-between">
+                <h3 class="font-heading text-2xl font-black text-brand-gold flex items-center gap-3">
+                    <i class="fa-solid fa-cart-shopping text-white/80 text-xl"></i>
+                    Keranjang Pesanan
+                </h3>
+                <button type="button" id="close-cart" class="w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-2xl transition-colors" aria-label="Tutup keranjang">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-4">
+                <div class="empty-cart rounded-xl bg-brand-light border border-dashed border-brand-brown/20 p-5 text-center text-brand-dark/60">
+                    Belum ada menu dipilih.
+                </div>
+            </div>
+            <div class="border-t border-brand-brown/10 p-5 bg-white">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="font-bold text-brand-brown text-lg">Total:</span>
+                    <span id="cart-total" class="font-heading text-2xl font-black text-brand-dark">Rp 0</span>
+                </div>
+                <a id="checkout-whatsapp" href="https://wa.me/6282244839538?text=Halo%20Angkringan%20Solo%20AD2630GZ,%20saya%20mau%20pesan..." target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-[0_0_15px_rgba(37,211,102,0.25)] flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Pesan via WhatsApp
+                </a>
+                <button type="button" id="clear-cart" class="mt-4 w-full border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-bold py-3 px-6 rounded-xl transition-colors">Kosongkan Keranjang</button>
+            </div>
+        </aside>
 
         <footer class="bg-brand-dark text-brand-light/70 py-8 text-center border-t border-white/10">
             <p>© 2026 Angkringan Solo AD2630GZ. All rights reserved.</p>
         </footer>
 
     </div> <script>
+        const menuItems = [
+            {
+                name: 'Nasi Kucing Sambal Teri',
+                price: 3000,
+                description: 'Porsi khas angkringan dengan sambal teri gurih dan nasi hangat.',
+                image: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=700&q=80',
+                badge: 'Favorit'
+            },
+            {
+                name: 'Sate Telur Puyuh Bacem',
+                price: 4000,
+                description: 'Sate manis gurih, cocok untuk teman nasi dan teh hangat.',
+                image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80',
+                badge: 'Laris'
+            },
+            {
+                name: 'Soto Daging Solo',
+                price: 15000,
+                description: 'Kuah bening segar dengan suwiran daging dan aroma rempah.',
+                image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80',
+                badge: 'Hangat'
+            },
+            {
+                name: 'Aneka Gorengan',
+                price: 1000,
+                description: 'Tempe, tahu, bakwan, dan pilihan gorengan hangat lainnya.',
+                image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=80',
+                badge: 'Renyah'
+            },
+            {
+                name: 'Nasi Liwet Solo',
+                price: 12000,
+                description: 'Nasi gurih dengan lauk rumahan dan cita rasa khas Solo.',
+                image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=80',
+                badge: 'Spesial'
+            },
+            {
+                name: 'Mie Godog Jawa',
+                price: 13000,
+                description: 'Mie kuah hangat dengan bumbu Jawa, telur, dan sayuran.',
+                image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80',
+                badge: 'Malam'
+            },
+            {
+                name: 'Wedang Jahe Susu',
+                price: 7000,
+                description: 'Minuman jahe hangat dengan susu, pas untuk nongkrong malam.',
+                image: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=700&q=80',
+                badge: 'Hangat'
+            },
+            {
+                name: 'Es Teh Manis',
+                price: 4000,
+                description: 'Teh manis segar, pasangan aman untuk semua menu angkringan.',
+                image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=700&q=80',
+                badge: 'Segar'
+            },
+            {
+                name: 'Nasi Gudeg Jogja',
+                price: 8000,
+                description: 'Gudeg manis gurih dengan lauk sederhana ala angkringan.',
+                image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80',
+                badge: 'Klasik'
+            },
+            {
+                name: 'Pecel Madiun',
+                price: 10000,
+                description: 'Sayur segar dengan bumbu kacang dan kerupuk renyah.',
+                image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80',
+                badge: 'Sayur'
+            },
+            {
+                name: 'Sate Usus Bacem',
+                price: 3000,
+                description: 'Sate bacem manis gurih, cocok dibakar lagi sebelum disantap.',
+                image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80',
+                badge: 'Sate'
+            },
+            {
+                name: 'Kopi Tubruk',
+                price: 5000,
+                description: 'Kopi hangat pekat untuk teman ngobrol sampai malam.',
+                image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80',
+                badge: 'Kopi'
+            }
+        ];
+
+        const whatsappNumber = '6282244839538';
+        const cart = new Map();
+        const rupiah = new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            maximumFractionDigits: 0
+        });
+
+        function formatRupiah(value) {
+            return rupiah.format(value).replace(/\s/g, ' ');
+        }
+
+        function renderMenu() {
+            const menuGrid = document.getElementById('menu-grid');
+            if (!menuGrid) return;
+
+            menuGrid.innerHTML = menuItems.map((item, index) => `
+                <article class="group bg-brand-light rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-brand-brown/10 transition-all duration-300">
+                    <div class="relative h-28 sm:h-48 overflow-hidden">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                        <span class="absolute top-2 left-2 sm:top-4 sm:left-4 rounded-full bg-brand-dark/85 text-brand-gold text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1">${item.badge}</span>
+                    </div>
+                    <div class="p-3 sm:p-5">
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-3 mb-2">
+                            <h3 class="font-bold text-sm sm:text-lg text-brand-brown leading-snug">${item.name}</h3>
+                            <span class="font-bold text-brand-dark text-sm sm:text-base whitespace-nowrap">${formatRupiah(item.price)}</span>
+                        </div>
+                        <p class="hidden sm:block text-sm text-brand-dark/65 mb-5 min-h-[40px]">${item.description}</p>
+                        <button type="button" class="add-to-cart w-full bg-brand-brown hover:bg-brand-dark text-white font-bold py-2.5 sm:py-3 px-3 sm:px-4 rounded-full transition-colors flex items-center justify-center gap-2 text-sm sm:text-base" data-index="${index}">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function buildWhatsAppLink() {
+            const items = Array.from(cart.values());
+
+            if (!items.length) {
+                return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Halo Angkringan Solo AD2630GZ, saya mau pesan...')}`;
+            }
+
+            const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            const orderLines = items.map((item, index) => `${index + 1}. ${item.name} x${item.quantity} - ${formatRupiah(item.price * item.quantity)}`).join('\n');
+            const message = `Halo Angkringan Solo AD2630GZ, saya mau pesan:\n\n${orderLines}\n\nTotal sementara: ${formatRupiah(total)}\n\nNama:\nAlamat/Pickup:\nCatatan:`;
+
+            return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        }
+
+        function setCartOpen(isOpen) {
+            const cartDrawer = document.getElementById('cart-drawer');
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartToggles = document.querySelectorAll('.cart-toggle');
+
+            if (cartDrawer) {
+                cartDrawer.classList.toggle('translate-x-full', !isOpen);
+                cartDrawer.setAttribute('aria-hidden', String(!isOpen));
+            }
+
+            if (cartOverlay) {
+                cartOverlay.classList.toggle('opacity-0', !isOpen);
+                cartOverlay.classList.toggle('pointer-events-none', !isOpen);
+            }
+
+            cartToggles.forEach((toggle) => {
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const checkoutWhatsapp = document.getElementById('checkout-whatsapp');
+            const heroWhatsapp = document.getElementById('hero-whatsapp');
+            const cartBadge = document.getElementById('cart-badge');
+            const navCartBadge = document.getElementById('nav-cart-badge');
+            const items = Array.from(cart.values());
+            const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
+            const whatsappLink = buildWhatsAppLink();
+
+            if (cartItems) {
+                cartItems.innerHTML = items.length ? items.map((item) => `
+                    <div class="bg-white rounded-2xl border border-brand-brown/10 p-4 shadow-sm flex items-center gap-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-xl object-cover flex-shrink-0">
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-bold text-brand-brown leading-tight">${item.name}</h4>
+                            <p class="text-sm font-semibold text-brand-dark/70">${formatRupiah(item.price)}</p>
+                        </div>
+                        <div class="flex items-center rounded-full border border-brand-brown/20 overflow-hidden flex-shrink-0">
+                            <button type="button" class="decrease-item w-9 h-9 hover:bg-brand-light transition-colors font-black text-brand-brown" data-name="${item.name}" aria-label="Kurangi ${item.name}">-</button>
+                            <span class="w-8 text-center font-bold">${item.quantity}</span>
+                            <button type="button" class="increase-item w-9 h-9 hover:bg-brand-light transition-colors font-black text-brand-brown" data-name="${item.name}" aria-label="Tambah ${item.name}">+</button>
+                        </div>
+                    </div>
+                `).join('') : `
+                    <div class="empty-cart rounded-xl bg-brand-light border border-dashed border-brand-brown/20 p-5 text-center text-brand-dark/60">
+                        Belum ada menu dipilih.
+                    </div>
+                `;
+            }
+
+            if (cartTotal) cartTotal.textContent = formatRupiah(total);
+            if (heroWhatsapp) heroWhatsapp.href = whatsappLink;
+            if (checkoutWhatsapp) checkoutWhatsapp.href = whatsappLink;
+            [cartBadge, navCartBadge].forEach((badge) => {
+                if (!badge) return;
+                badge.textContent = totalQuantity;
+                badge.classList.toggle('hidden', totalQuantity === 0);
+                badge.classList.toggle('flex', totalQuantity > 0);
+            });
+        }
+
+        function addToCart(item) {
+            const current = cart.get(item.name) || { ...item, quantity: 0 };
+            current.quantity += 1;
+            cart.set(item.name, current);
+            updateCart();
+        }
+
+        document.addEventListener('click', function(event) {
+            const addButton = event.target.closest('.add-to-cart');
+            const increaseButton = event.target.closest('.increase-item');
+            const decreaseButton = event.target.closest('.decrease-item');
+            const clearButton = event.target.closest('#clear-cart');
+            const cartToggle = event.target.closest('.cart-toggle');
+            const closeCart = event.target.closest('#close-cart');
+            const cartOverlay = event.target.closest('#cart-overlay');
+
+            if (addButton) {
+                addToCart(menuItems[Number(addButton.dataset.index)]);
+            }
+
+            if (increaseButton) {
+                const item = cart.get(increaseButton.dataset.name);
+                if (item) addToCart(item);
+            }
+
+            if (decreaseButton) {
+                const item = cart.get(decreaseButton.dataset.name);
+                if (item && item.quantity > 1) {
+                    item.quantity -= 1;
+                    cart.set(item.name, item);
+                } else if (item) {
+                    cart.delete(item.name);
+                }
+                updateCart();
+            }
+
+            if (clearButton) {
+                cart.clear();
+                updateCart();
+            }
+
+            if (cartToggle) {
+                setCartOpen(true);
+            }
+
+            if (closeCart || cartOverlay) {
+                setCartOpen(false);
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                setCartOpen(false);
+            }
+        });
+
+        renderMenu();
+        updateCart();
+
         // Saat seluruh aset halaman (gambar, dll) selesai dimuat
         window.addEventListener('load', function() {
             const skeleton = document.getElementById('skeleton-loader');
